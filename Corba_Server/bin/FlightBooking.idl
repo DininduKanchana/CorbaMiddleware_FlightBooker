@@ -1,0 +1,10 @@
+module FlightBookingApp
+{
+	interface FlightBooking{
+		
+		string search(in string from,in string to);
+		string book(in long id,in string name,in string date);
+		string cancleBooking(in long id,in string name,in string date);
+		oneway void shutdown();	
+	};
+};
